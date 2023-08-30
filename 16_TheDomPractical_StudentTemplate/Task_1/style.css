@@ -1,0 +1,30 @@
+h1{
+  text-align: center;
+}
+
+.form-preamble {
+  text-align: center;
+}
+
+form {
+  width: 55em;
+  margin: 1em auto;
+}
+
+fieldset {
+  margin-bottom: 1em;
+}
+
+button {
+  margin-left: 1em;
+}
+
+small {
+  margin-top: 1em;
+  display: block;
+  font-size: medium;
+}
+
+.hidden {
+  display: none;
+}

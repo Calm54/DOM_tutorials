@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	margin: 50px;
+}
+
+.testClass {
+	width: 150px;
+	height: 150px;
+	background-color: tomato;
+	display: inline-block;
+	margin: 25px;
+	border-radius: 15px;
+	text-align: center;
+	padding: 18%;
+	color: white;
+	font-size: 2em;
+}
+
+.tempStyle {
+	border: 1px solid orange;
+	background-color: palegoldenrod;
+}
+
+.newClass {
+	background-color: blue;
+}
