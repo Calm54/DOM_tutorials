@@ -1,23 +1,23 @@
 const images = document.getElementsByClassName('imageFilter');
+const form = document.getElementById('filters')
+const animalRadios = document.getElementsByName('animalType');
 
-const animmalRadios = document.getElementsByClassName('animalType');
+function filterAnimals() {
+  // previously used the event object, now using a query selector to get the value of the selected radio but
+  const selectedAnimal = document.querySelector('input[name="animalType"]:checked').value;
+  // console.log(selectedAnimal);
 
-console.log('images')
-
-filterAnimals = (e) => {
-const selectAnimal = e.target.value;
-
- for (const image of images) {
-    if (selectedAimal === 'all' || selectedAnimal === image.getAttribute('animal')) {
-        image.classList.remove('hidden');
-    } else {
-        image.classList.add('hidden');
+  for (const image of images) {
+    if (selectedAnimal === 'all' || selectedAnimal === image.getAttribute('animal')) {
+      image.classList.remove('hidden');
     }
- }
+    else {
+      image.classList.add('hidden');
+    }
+  }  
 }
 
-// Whenever an animal type is selected via the radio buttons, run filterAnimal
+// Whenever an animal type is selected via the radio buttons, run filterAnimals.
 for (const animalRadio of animalRadios) {
-    animalRadio.addEventListener('change', filterAnimals);
+  animalRadio.addEventListener('change', filterAnimals);
 }
-

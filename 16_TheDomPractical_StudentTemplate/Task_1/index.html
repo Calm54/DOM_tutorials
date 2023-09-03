@@ -16,6 +16,49 @@
     <a href="https://codepen.io/andrushka/pen/rNdQmOd">Codepen Link to animal pictures</a><br />
     <a href="#">Completed tasks Codepen Link</a>
     <main class="container">
+      <h1>Animal Filters</h1>
+      <p class="form-preamble">
+        You can filter the images by selecting a type. You can also enter keywords into the search box.
+      </p>
+      <form id="filters">
+        <fieldset>
+          <legend>Type</legend>
+            <input type="radio" name="animalType" id="dolphin" value="dolphin">
+            <label for="dolphin">Dolphin</label>
+            <input type="radio" name="animalType" id="bear" value="bear">
+            <label for="bear">Bear</label>
+            <input type="radio" name="animalType" id="duck" value="duck">
+            <label for="duck">Duck</label>
+            <input type="radio" name="animalType" id="giraffe" value="giraffe">
+            <label for="giraffe">Giraffe</label>
+            <input type="radio" name="animalType" id="all" value="all" checked>
+            <label for="all">Show All</label>
+        </fieldset>
+        <label for="search">Search</label>
+        <input type="search" name="search" id="search">
+      </form>
+
+      <div id="summary"></div>
+      <div id="results">
+        <img animal="dolphin" class="imageFilter" src="https://images.pexels.com/photos/64219/dolphin-marine-mammals-water-sea-64219.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Cute Dolphine Underwater ">
+        <img animal="bear" class="imageFilter" src="https://images.pexels.com/photos/35435/pexels-photo.jpg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown Bear">
+        <img animal="dolphin" class="imageFilter" src="https://images.pexels.com/photos/1986374/pexels-photo-1986374.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Gray Dolphin on Body of Water">
+        <img animal="giraffe" class="imageFilter" src="https://images.pexels.com/photos/802112/pexels-photo-802112.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Close-Up Photography of Giraffe">
+        <img animal="bear" class="imageFilter" src="https://images.pexels.com/photos/1068554/pexels-photo-1068554.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Close-Up Photography of Grizzly Bear">
+        <img animal="duck" class="imageFilter" src="https://images.pexels.com/photos/162140/duckling-birds-yellow-fluffy-162140.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Duckling on Black Soil during Daytime">
+        <img animal="duck" class="imageFilter" src="https://images.pexels.com/photos/660266/pexels-photo-660266.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Depth of Field Photography of Mallard Duck on Body of Water">
+        <img animal="dolphin" class="imageFilter" src="https://images.pexels.com/photos/162079/dolphin-sea-marine-mammals-wise-162079.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Dolphin's Head in the Surface">
+        <img animal="giraffe" class="imageFilter" src="https://images.pexels.com/photos/1319515/pexels-photo-1319515.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Photograph of Giraffe">
+        <img animal="duck" class="imageFilter" src="https://images.pexels.com/photos/209035/pexels-photo-209035.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown White and Blue Duck">
+        <img animal="bear" class="imageFilter" src="https://images.pexels.com/photos/158109/kodiak-brown-bear-adult-portrait-wildlife-158109.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown Bear on a Body of Water ">
+        <img animal="dolphin" class="imageFilter" src="https://images.pexels.com/photos/225869/pexels-photo-225869.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Adorable Dolphins on Surface of Water">
+        <img animal="duck" class="imageFilter" src="https://images.pexels.com/photos/833687/pexels-photo-833687.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Green and Gray Mallard Duck">
+        <img animal="giraffe" class="imageFilter" src="https://images.pexels.com/photos/6057741/pexels-photo-6057741.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Giraffes Crossing the Road">
+        <img animal="bear" class="imageFilter" src="https://images.pexels.com/photos/598966/pexels-photo-598966.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Grayscale Photo of a Polar Bear Cub ">
+        <img animal="giraffe" class="imageFilter" src="https://images.pexels.com/photos/67552/giraffe-tall-mammal-africa-67552.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown Giraffe Walking on Brown Grass">
+      </div>
+
+      <small>Photos provided by <a href="https://www.pexels.com">Pexels</a>.</small>
       
     </main>
   </body>
